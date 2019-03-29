@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Ksusha Zhukova](https://up.htmlacademy.ru/adaptive/16/user/226838).
-* Наставник: `Неизвестно`.
+- Студент: [Ksusha Zhukova](https://up.htmlacademy.ru/adaptive/16/user/226838).
+- Наставник: `Елена Забара`.
 
 ---
 
