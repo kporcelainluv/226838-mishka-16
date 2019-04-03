@@ -6,8 +6,8 @@
   </head>
 
   <body>
-    //скопировано из index
-    <header class="catalog-header">
+    //header&footer скопирован из index.html
+    <header class="page-header">
       <a href="#" class="page-header__logo">
         <img
           class="page-header__logo-image"
@@ -17,9 +17,9 @@
           height="35"
         />
       </a>
-      <button class="page-header-toggle" type="button"></button>
-      <nav class="page-header-nav">
-        <ul class="page-header__list site-list">
+      <button class="page-header__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav">
+        <ul class="main-nav-list site-list">
           <li class="site-list__item"><a href="#">Каталог товаров</a></li>
           <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
           <li class="site-list__item"><a href="#">Поиск по сайту</a></li>
@@ -31,25 +31,56 @@
       <h1 class="catalog-main-header">
         Каталог товаров
       </h1>
-      <section class="catalog-main-products">
-        <ul class="products-list">
+      <section class="catalog-products">
+        <ul class="catalog-products-list">
           <li class="products-list__element">
             <div class="products-list__element-wrap">
               <img
-                class="list__element--image"
+                class="product__image"
                 src="http://placehold.it/260x195"
                 alt="зайчик-попрыгайчик"
                 height="195"
                 width="260"
               />
-              <p class="list__element--description">Зайчик-попрыгайчик</p>
-              <span class="list__element--description-additional"
+              <p class="product__description">Зайчик-попрыгайчик</p>
+              <span class="catalog-list__description-additional"
                 >Рост 30 см, вес 200 г</span
               >
-              <ul class="list__element--buy">
-                <li class="list__element--price">1 200 руб.</li>
-                <li class="list__element--button">
-                  <button class="list__element--button__element" type="button">
+              <ul class="product__order">
+                <li class="order__element-price">1 200 руб.</li>
+                <li class="order__element-button">
+                  <button class="button__to-cart" type="button">
+                    в корзину
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="products-list__element">
+            <div class="products-list__element-wrap">
+              <img class="product__image" src="http://placehold.it/260x195" alt="зайчик-попрыгайчик" height="195" width="260" />
+              <p class="product__description">Корзинка для белья</p>
+              <span class="catalog-list__description-additional">Диаметр 15 см, высота 10 см</span>
+              <ul class="product__order">
+                <li class="order__element-price">690 руб.</li>
+                <li class="order__element-button">
+                  <button class="button__to-cart" type="button">
+                    в корзину
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="products-list__element">
+            <div class="products-list__element-wrap">
+              <img class="product__image" src="http://placehold.it/260x195" alt="зайчик-попрыгайчик" height="195" width="260" />
+              <p class="product__description">Большая корзинка
+              для игрушек</p>
+              <span class="catalog-list__description-additional">Диаметр 30 см, высота 30 см</span>
+              <ul class="product__order">
+                <li class="order__element-price">1500 руб.</li>
+                <li class="order__element-button">
+                  <button class="button__to-cart" type="button">
                     в корзину
                   </button>
                 </li>
@@ -57,75 +88,30 @@
             </div>
           </li>
 
-          <li class="products-list__element">
-            <div class="products-list__element-wrap">
-              <img
-                class="list__element--image"
-                src="http://placehold.it/260x195"
-                alt="зайчик-попрыгайчик"
-                height="195"
-                width="260"
-              />
-              <p class="list__element--description">Корзинка для белья</p>
-              <span class="list__element--description-additional"
-                >Диаметр 15 см, высота 10 см</span
-              >
-              <ul class="list__element--buy">
-                <li class="list__element--price">690 руб.</li>
-                <li class="list__element--button">
-                  <button class="list__element--button__element" type="button">
-                    в корзину
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="products-list__element">
-            <div class="products-list__element-wrap">
-              <img
-                class="list__element--image"
-                src="http://placehold.it/260x195"
-                alt="зайчик-попрыгайчик"
-                height="195"
-                width="260"
-              />
-              <p class="list__element--description">
-                Большая корзинка для игрушек
-              </p>
-              <span class="list__element--description-additional"
-                >Диаметр 30 см, высота 30 см</span
-              >
-              <ul class="list__element--buy">
-                <li class="list__element--price">1 500 руб..</li>
-                <li class="list__element--button">
-                  <button class="list__element--button__element" type="button">
-                    в корзину
-                  </button>
-                </li>
               </ul>
             </div>
           </li>
         </ul>
       </section>
     </main>
-    //из index.html
     <footer class="page-footer">
       <section class="footer-socials">
         <h2 class="visually-hidden">Социальные сети интернет-магазина Мишка</h2>
-        <ul class="footer-social-links">
-          <li class="social-links__element social-links--instagram">
+        <ul class="footer-socials__list links-list">
+          <li class="links-list__element social--instagram">
             Instagram
           </li>
-          <li class="social-links__element social-links--vk">VK</li>
-          <li class="social-links__element social-links--twitter">Twitter</li>
+          <li class="links-list__element social--vk">VK</li>
+          <li class="links-list__element social--twitter">Twitter</li>
         </ul>
       </section>
-      <section class="page-footer-creator">
+      <section class="footer-creator">
         <h2 class="visually-hidden">Проект разработан</h2>
         <ul class="creator-info">
           <li class="creator-info__element">Разработано</li>
           <li class="creator-info__element">
             <img
+              class="creator-info__logo"
               width="34"
               height="27"
               src="http://placehold.it/27x34"

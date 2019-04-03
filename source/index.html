@@ -15,9 +15,9 @@
           height="35"
         />
       </a>
-      <button class="page-header-toggle" type="button"></button>
-      <nav class="page-header-nav">
-        <ul class="page-header__list site-list">
+      <button class="page-header__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav">
+        <ul class="main-nav-list site-list">
           <li class="site-list__item"><a href="#">Каталог товаров</a></li>
           <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
           <li class="site-list__item"><a href="#">Поиск по сайту</a></li>
@@ -30,8 +30,8 @@
         Интернет-магазин вязаных игрушек и аксессуаров для дома
       </h1>
       <section class="main-catalog">
-        <div class="main-catalog-wrap"></div>
-        <h2 class="main__description">
+        <div class="main-catalog__wrap"></div>
+        <h2 class="main-catalog__description">
           Милые штучки ручной работы для дома
         </h2>
         <img
@@ -57,18 +57,18 @@
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках,
           и трех размерах.
         </p>
-        <table class="main-product-advantages">
+        <table class="main-product__advantages">
           <tr>
-            <td class="advantages_name">Цвет:</td>
-            <td class="advantages_description">"Тиффани»/серый"</td>
+            <td class="advantages__name">Цвет:</td>
+            <td class="advantages__value">"Тиффани»/серый"</td>
           </tr>
           <tr>
-            <td class="advantages_name">Диаметр:</td>
-            <td class="advantages_description">25 см</td>
+            <td class="advantages__name">Диаметр:</td>
+            <td class="advantages__value">25 см</td>
           </tr>
           <tr>
-            <td class="advantages_name">Высота:</td>
-            <td class="advantages_description">15см</td>
+            <td class="advantages__name">Высота:</td>
+            <td class="advantages__value">15см</td>
           </tr>
         </table>
 
@@ -80,27 +80,27 @@
           height="315"
         />
         <span class="main-product__price">Цена: 990 руб.</span>
-        <button class="page-main__button" type="button">Заказать</button>
+        <button class="main-button" type="button">Заказать</button>
       </article>
       <section class="page-main-about">
-        <h2 class="about-header">Коротко о нас</h2>
-        <ul class="about-features">
-          <li class="about-features__elements elements--material">
+        <h2 class="about__header">Коротко о нас</h2>
+        <ul class="about__features features-list">
+          <li class="features-list__elements elements--material">
             Экологически чистые материалы
           </li>
-          <li class="about-features__elements elements--price">
+          <li class="features-list__elements features--price">
             Скандинавский стиль по российскиой цене
           </li>
-          <li class="about-features__elements elements--like">
+          <li class="features-list__elements features--like">
             Увеличивает лайки на фотографиях
           </li>
-          <li class="about-features__elements elements--knit">
+          <li class="features-list__elements features--knit">
             Связано в ручную с любовью и умилением
           </li>
-          <li class="about-features__elements elements--support">
+          <li class="features-list__elements features--support">
             Поддержка отечественного производителя
           </li>
-          <li class="about-features__elements elements--present">
+          <li class="features-list__elements features--present">
             Поставляется в подарочной упаковке
           </li>
         </ul>
@@ -109,20 +109,21 @@
     <footer class="page-footer">
       <section class="footer-socials">
         <h2 class="visually-hidden">Социальные сети интернет-магазина Мишка</h2>
-        <ul class="footer-social-links">
-          <li class="social-links__element social-links--instagram">
+        <ul class="footer-socials__list links-list">
+          <li class="links-list__element social--instagram">
             Instagram
           </li>
-          <li class="social-links__element social-links--vk">VK</li>
-          <li class="social-links__element social-links--twitter">Twitter</li>
+          <li class="links-list__element social--vk">VK</li>
+          <li class="links-list__element social--twitter">Twitter</li>
         </ul>
       </section>
-      <section class="page-footer-creator">
+      <section class="footer-creator">
         <h2 class="visually-hidden">Проект разработан</h2>
         <ul class="creator-info">
           <li class="creator-info__element">Разработано</li>
           <li class="creator-info__element">
             <img
+              class="creator-info__logo"
               width="34"
               height="27"
               src="http://placehold.it/27x34"
