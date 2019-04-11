@@ -1,12 +1,14 @@
 .main-footer {
   background-color: $grey;
 }
+
 .main-footer__socials-list {
   display: flex;
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 30px;
   position: relative;
+
   &::after {
     position: absolute;
     top: 70px;
@@ -16,16 +18,20 @@
     display: block;
   }
 }
+
 .links-list__element {
   list-style-type: none;
 }
+
 .link-wrap__item {
   list-style: none;
   position: relative;
   padding-right: 40px;
 }
+
 .link-wrap__item--instagram {
   padding-right: 50px;
+
   &::before {
     content: "";
     background-image: url("../img/icon-insta.svg");
@@ -60,19 +66,23 @@
     left: 0;
   }
 }
+
 .footer-creator__info {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
 }
+
 .project-creator {
   font-size: 19px;
   font-weight: bold;
   line-height: 0.95;
   margin-right: 30px;
 }
+
 .project-link {
   position: relative;
+
   &::after {
     content: "";
     background-image: url("../img/logo-htmlacademy.svg");

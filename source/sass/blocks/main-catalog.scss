@@ -1,6 +1,7 @@
 .main-catalog {
   background-image: url("../img/hero-mobile@1x.jpg");
 }
+
 .main-catalog__description {
   max-width: 210px;
   height: 87px;
@@ -12,11 +13,13 @@
   margin: auto;
   padding-top: 85px;
 }
+
 .main-catalog__categories-list {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   margin-top: 120px;
 }
+
 .categories-list__element {
   height: 103px;
   width: 100%;
@@ -25,15 +28,18 @@
   line-height: 1.26;
   text-align: left;
 }
+
 .categories-list__element__link {
   display: flex;
   padding: 30px;
   max-width: 106px;
   color: $white;
 }
+
 .categories-list__element--lamp {
   background-color: $seafoam-blue;
 }
+
 .categories-list__element--lego {
   background-color: $greeny-blue;
 }

@@ -1,14 +1,17 @@
 .page-header {
   background-color: $white;
 }
+
 .page-header__wrap {
   display: flex;
   flex-direction: row;
   justify-content: center;
   position: relative;
 }
+
 .page-header__label {
   position: relative;
+
   &::after {
     position: absolute;
     top: -25px;
@@ -21,20 +24,24 @@
     object-fit: contain;
   }
 }
+
 .page-header__toggle:not(:checked) ~ .main-nav {
   display: none;
 }
+
 .page-header__toggle:checked ~ .main-nav {
   display: flex;
   justify-content: center;
   padding-top: 30px;
 }
+
 .main-nav__list {
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 0;
 }
+
 .site-list__item {
   width: 100%;
   padding-top: 30px;
@@ -52,6 +59,7 @@
     display: block;
   }
 }
+
 .site-list__item-link {
   text-decoration: none;
   color: #000000;
