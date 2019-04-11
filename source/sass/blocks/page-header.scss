@@ -9,10 +9,10 @@
 }
 .page-header__label {
   position: relative;
-  &::before {
+  &::after {
     position: absolute;
     top: -25px;
-    left: 430px;
+    left: 320px;
     height: 20px;
     width: 15px;
     content: "";
@@ -54,4 +54,5 @@
 }
 .site-list__item-link {
   text-decoration: none;
+  color: #000000;
 }
