@@ -4,12 +4,10 @@
 @import "blocks/main-product.scss";
 @import "blocks/main-about.scss";
 @import "blocks/main-footer.scss";
-
 @import "blocks/catalog-main.scss";
 @import "blocks/catalog-products.scss";
-
 body {
-  font-family: OpenSans, sans-serif;
+  font-family: "OpenSans", sans-serif;
 }
 .visually-hidden {
   position: absolute;
