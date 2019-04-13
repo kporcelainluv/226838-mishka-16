@@ -7,8 +7,9 @@
   flex-direction: row;
   justify-content: center;
   position: relative;
-  padding: 20px 0px;
+  padding: 20px 0;
 }
+
 .page-header__label {
   &::before {
     content: "";
@@ -19,7 +20,6 @@
     width: 15px;
     background-image: url("../img/icon-menu-open.svg");
     display: block;
-    object-fit: contain;
   }
 }
 
@@ -28,11 +28,8 @@
 }
 
 .page-header__toggle:checked ~ .main-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding-top: 30px;
+  display: block;
+  margin-top: -25px;
 }
 
 .main-nav__list {
@@ -50,8 +47,10 @@
   line-height: 1.41;
   list-style: none;
   border-bottom: 1px solid $grey;
+  border-top: 1px solid #f1f1f1;
   padding-bottom: 40px;
   padding-left: 35%;
+  padding-right: 15%;
 }
 
 .site-list__item-link {
