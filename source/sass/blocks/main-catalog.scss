@@ -56,6 +56,7 @@
 
 .categories-list__element--lego {
   background-color: $greeny-blue;
+
   &::after {
     content: "";
     background-image: url("../img/icon-toy.svg");
