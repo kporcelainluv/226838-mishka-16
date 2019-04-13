@@ -46,11 +46,13 @@
   font-weight: bold;
   line-height: 1.41;
   list-style: none;
-  border-bottom: 1px solid $grey;
-  border-top: 1px solid #f1f1f1;
+  border-top: 1px solid $grey;
   padding-bottom: 40px;
   padding-left: 35%;
   padding-right: 15%;
+}
+.site-list__item--last {
+  border-bottom: 1px solid $grey;
 }
 
 .site-list__item-link {
