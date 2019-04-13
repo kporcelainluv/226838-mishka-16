@@ -1,4 +1,6 @@
 @import "variables.scss";
+@import "blocks/base.scss";
+@import "normalize.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-catalog.scss";
 @import "blocks/main-product.scss";
@@ -6,4 +8,3 @@
 @import "blocks/main-footer.scss";
 @import "blocks/catalog-main.scss";
 @import "blocks/catalog-products.scss";
-@import "blocks/base.scss";
