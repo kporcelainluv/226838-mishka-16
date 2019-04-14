@@ -1,3 +1,8 @@
+@mixin block-margin {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
 .main-product {
   margin-top: 34px;
   display: flex;
@@ -11,8 +16,8 @@
   line-height: 1.2;
   margin: 0;
   padding: 0;
-  margin-left: 32px;
-  margin-right: 32px;
+
+  @include block-margin();
 }
 
 .main-product__additional-header {
@@ -20,8 +25,8 @@
   font-weight: bold;
   line-height: 1.18;
   color: $seafoam-blue;
-  margin-left: 32px;
-  margin-right: 32px;
+
+  @include block-margin();
 }
 
 .main-product__description {
@@ -29,14 +34,14 @@
   line-height: 1.6;
   max-width: 245px;
   color: $content-color;
-  margin-left: 32px;
-  margin-right: 32px;
+
+  @include block-margin();
 }
 
 .main-product__advantages {
   border-collapse: collapse;
-  margin-left: 32px;
-  margin-right: 32px;
+
+  @include block-margin();
 }
 
 .product-advantages__name {
@@ -56,8 +61,8 @@
 
 .main-product__image {
   margin-top: 30px;
-  margin-left: 32px;
-  margin-right: 32px;
+
+  @include block-margin();
 }
 
 .main-product__price {
@@ -81,8 +86,8 @@
   text-align: center;
   padding: 20px 90px;
   margin-top: 30px;
-  margin-left: 32px;
-  margin-right: 32px;
+
+  @include block-margin();
 }
 
 .main-product__zigzag {

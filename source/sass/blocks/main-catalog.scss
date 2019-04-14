@@ -39,18 +39,22 @@
   color: $white;
 }
 
+@mixin list__element--icon {
+  position: absolute;
+  content: "";
+  opacity: 0.2;
+}
+
 .categories-list__element--lamp {
   background-color: $seafoam-blue;
 
   &::before {
-    position: absolute;
+    @include list__element--icon();
     top: 23px;
     right: 36px;
     background-image: url("../img/icon-interior.svg");
     width: 40px;
     height: 62px;
-    content: "";
-    opacity: 0.2;
   }
 }
 
@@ -58,13 +62,11 @@
   background-color: $greeny-blue;
 
   &::after {
-    content: "";
+    @include list__element--icon();
     background-image: url("../img/icon-toy.svg");
-    position: absolute;
     top: 21px;
     right: 28px;
     width: 60px;
     height: 60px;
-    opacity: 0.2;
   }
 }
