@@ -1,0 +1,72 @@
+.main-catalog {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  margin-top: -15px;
+  background-position: top;
+}
+
+.main-catalog__description {
+  max-width: 250px;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1.11;
+  color: $headings-color;
+  text-align: center;
+  margin: auto;
+  padding-top: 85px;
+}
+
+.main-catalog__categories-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 120px;
+  position: relative;
+}
+
+.categories-list__element {
+  height: 103px;
+  width: 100%;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.26;
+  text-align: left;
+  position: relative;
+}
+
+.categories-list__element__link {
+  display: flex;
+  padding: 30px;
+  max-width: 106px;
+  color: $white;
+}
+
+@mixin list__element--icon {
+  position: absolute;
+  content: "";
+  opacity: 0.2;
+}
+
+.categories-list__element--lamp {
+  background-color: $seafoam-blue;
+
+  &::before {
+    @include list__element--icon();
+    top: 23px;
+    right: 36px;
+    background-image: url("../img/icon-interior.svg");
+    width: 40px;
+    height: 62px;
+  }
+}
+
+.categories-list__element--lego {
+  background-color: $greeny-blue;
+
+  &::after {
+    @include list__element--icon();
+    background-image: url("../img/icon-toy.svg");
+    top: 21px;
+    right: 28px;
+    width: 60px;
+    height: 60px;
+  }
+}

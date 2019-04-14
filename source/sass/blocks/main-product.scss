@@ -1,0 +1,128 @@
+@mixin block-margin {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.main-product {
+  margin-top: 34px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-product__header {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+
+  @include block-margin();
+}
+
+.main-product__additional-header {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  color: $seafoam-blue;
+
+  @include block-margin();
+}
+
+.main-product__description {
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 245px;
+  color: $content-color;
+
+  @include block-margin();
+}
+
+.main-product__advantages {
+  border-collapse: collapse;
+
+  @include block-margin();
+}
+
+.product-advantages__name {
+  font-size: 15px;
+  line-height: 1.33;
+  color: $content-color;
+  padding-right: 30px;
+  border-bottom: 1px solid $grey;
+}
+
+.product-advantages__value {
+  font-size: 15px;
+  line-height: 1.33;
+  color: $content-color;
+  border-bottom: 1px solid $grey;
+}
+
+.main-product__image {
+  margin-top: 30px;
+
+  @include block-margin();
+}
+
+.main-product__price {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  text-align: center;
+  color: $content-color;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.order-button {
+  display: block;
+  border: solid 2px $content-color;
+  color: $content-color;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 90px;
+  margin-top: 30px;
+
+  @include block-margin();
+}
+
+.main-product__zigzag {
+  margin-top: 36px;
+  background: $white;
+  position: relative;
+  height: 16px;
+  z-index: 1;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  &::before {
+    height: 8px;
+    top: 140%;
+    background: linear-gradient(-135deg, $grey 8px, transparent 0) 0 8px,
+      linear-gradient(135deg, $grey 8px, transparent 0) 0 8px;
+    background-position: top left;
+    background-repeat: repeat-x;
+    background-size: 16px 16px;
+  }
+
+  &::after {
+    height: 16px;
+    top: 100%;
+    background: linear-gradient(-135deg, $white 8px, transparent 0) 0 8px,
+      linear-gradient(135deg, $white 8px, transparent 0) 0 8px;
+    background-position: top left;
+    background-repeat: repeat-x;
+    background-size: 16px 16px;
+  }
+}
