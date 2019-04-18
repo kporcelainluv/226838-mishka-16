@@ -8,14 +8,14 @@
 
   <body>
     <main class="catalog-main">
-      <h1 class="catalog-main-header">
-        Каталог товаров
-      </h1>
-      <section class="catalog-products">
+      <section class="catalog-main__products">
+        <h1 class="catalog-main__header">
+          Каталог товаров
+        </h1>
         <h2 class="visually-hidden">Каталог товаров</h2>
-        <ul class="catalog-products__list">
-          <li class="catalog-products__list__element product">
-            <div class="product-wrap">
+        <ul class="catalog-main__list">
+          <li class="catalog-main__element product">
+            <div class="product__wrap">
               <img
                 class="product__image"
                 src="./img/photo-hare-mobile@1x.jpg"
@@ -23,22 +23,22 @@
                 height="195"
                 width="260"
               />
-              <div class="description-wrap">
+              <div class="product__description-wrap">
                 <h2 class="product__description">Зайчик-попрыгайчик</h2>
                 <span class="product__description-additional"
                   >Рост 30 см, вес 200 г</span
                 >
-                <div class="product-order">
-                  <p class="product-order__element-price">690 руб.</p>
-                  <a class="product-order__element-button">
+                <div class="product__order">
+                  <p class="product__price">1200 руб.</p>
+                  <a class="product__button">
                     <span class="visually-hidden"> в корзину</span>
                   </a>
                 </div>
               </div>
             </div>
           </li>
-          <li class="catalog-products__list__element product">
-            <div class="product-wrap">
+          <li class="catalog-main__element product">
+            <div class="product__wrap">
               <img
                 class="product__image"
                 src="./img/photo-bowl-mobile@1x.jpg"
@@ -46,22 +46,22 @@
                 height="195"
                 width="260"
               />
-              <div class="description-wrap">
-                <h2 class="product__description">Корзинка для белья</h2>
+              <div class="product__description-wrap">
+                <h2 class="product__description">Зайчик-попрыгайчик</h2>
                 <span class="product__description-additional"
-                  >Диаметр 15 см, высота 10 см</span
+                  >Рост 30 см, вес 200 г</span
                 >
-                <div class="product-order">
-                  <p class="product-order__element-price">690 руб.</p>
-                  <a class="product-order__element-button">
-                    <span class="visually-hidden">в корзину</span>
+                <div class="product__order">
+                  <p class="product__price">1200 руб.</p>
+                  <a class="product__button">
+                    <span class="visually-hidden"> в корзину</span>
                   </a>
                 </div>
               </div>
             </div>
           </li>
-          <li class="catalog-products__list__element product">
-            <div class="product-wrap">
+          <li class="catalog-main__element product">
+            <div class="product__wrap">
               <img
                 class="product__image"
                 src="./img/photo-toys-mobile@1x.jpg"
@@ -69,16 +69,14 @@
                 height="195"
                 width="260"
               />
-              <div class="description-wrap">
-                <h2 class="product__description product__description--basket">
-                  Большая корзинка для игрушек
-                </h2>
+              <div class="product__description-wrap">
+                <h2 class="product__description">Зайчик-попрыгайчик</h2>
                 <span class="product__description-additional"
-                  >Диаметр 30 см, высота 30 см</span
+                  >Рост 30 см, вес 200 г</span
                 >
-                <div class="product-order">
-                  <p class="product-order__element-price">1500 руб.</p>
-                  <a class="product-order__element-button">
+                <div class="product__order">
+                  <p class="product__price">1200 руб.</p>
+                  <a class="product__button">
                     <span class="visually-hidden"> в корзину</span>
                   </a>
                 </div>
@@ -87,6 +85,23 @@
           </li>
         </ul>
       </section>
+      <article class="catalog__production">
+        <h2 class="production__heading">Процесс производства</h2>
+        <div class="production__wrap">
+          <img
+            class="production__image"
+            src="./img/video-mobile@1x.jpg"
+            alt="видео процесса производства"
+            height="150"
+            width="260"
+          />
+          <p class="production__description">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное
+            видео о том, как появляются наши товары.
+          </p>
+          <button class="button">СДЕЛАТЬ ЗАКАЗ</button>
+        </div>
+      </article>
     </main>
   </body>
 </html>

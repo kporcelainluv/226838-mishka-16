@@ -1,0 +1,15 @@
+.production__heading {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  max-width: 126px;
+  margin: 30px auto;
+}
+.catalog__production {
+  border: 1px solid $grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
