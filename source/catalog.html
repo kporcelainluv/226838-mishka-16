@@ -89,19 +89,34 @@
         </ul>
       </section>
       <article class="catalog__production">
-        <h2 class="production__heading">Процесс производства</h2>
-        <img
-          class="production__image"
+        <picture class="production__image">
+          <source
+            srcset="./img/video-tablet@1x.jpg"
+            media="(min-width: 772px)"
+          />
+          <source
+            srcset="./img/video-desktop@1x.jpg"
+            media="(min-width: 1150px)"
+          />
+          <img
+            src="./img/video-mobile@1x.jpg"
+            alt="видео процесса производства"
+          />
+        </picture>
+        <!-- <img
           src="./img/video-mobile@1x.jpg"
           alt="видео процесса производства"
           height="150"
           width="260"
-        />
-        <p class="production__description">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео
-          о том, как появляются наши товары.
-        </p>
-        <button class="button">СДЕЛАТЬ ЗАКАЗ</button>
+        /> -->
+        <div class="production__wrap">
+          <h2 class="production__heading">Процесс производства</h2>
+          <p class="production__description">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное
+            видео о том, как появляются наши товары.
+          </p>
+          <button class="button">СДЕЛАТЬ ЗАКАЗ</button>
+        </div>
       </article>
     </main>
   </body>
