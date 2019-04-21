@@ -20,7 +20,6 @@
   padding: 0;
   margin-top: 120px;
   position: relative;
-  margin-top: 370px;
   justify-content: center;
 }
 
@@ -33,7 +32,6 @@
   text-align: left;
   position: relative;
   list-style-type: none;
-  max-width: 334px;
   padding: 8px 0;
 }
 
@@ -92,5 +90,9 @@
   }
   .main-catalog__categories-list {
     display: flex;
+    margin-top: 370px;
+  }
+  .categories-list__element {
+    max-width: 334px;
   }
 }
