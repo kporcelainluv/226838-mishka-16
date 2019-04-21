@@ -92,3 +92,24 @@
     left: 0;
   }
 }
+@media (min-width: $tablet-width) {
+  .main-footer {
+    display: flex;
+    justify-content: space-around;
+    min-height: 143px;
+  }
+  .links-list {
+    padding-top: 0;
+    margin: 0;
+    &::after {
+      border: none;
+    }
+  }
+  .main-footer__image {
+    padding-top: 50px;
+  }
+  .main-footer__socials,
+  .footer-creator {
+    padding-top: 65px;
+  }
+}
