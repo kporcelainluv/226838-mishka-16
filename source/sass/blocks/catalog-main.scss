@@ -35,7 +35,6 @@
   color: $content-color;
   position: relative;
   padding-left: 30px;
-  margin-bottom: 27px;
 }
 
 .product__order {
@@ -75,7 +74,6 @@
 }
 @media (min-width: $tablet-width) {
   .product__wrap {
-    min-height: 334px;
     display: flex;
     margin-bottom: 54px;
   }
@@ -107,4 +105,49 @@
   }
 }
 @media (min-width: $desktop-width) {
+  .catalog-main__header {
+    padding: 105px 0;
+    margin-top: -15px;
+    position: relative;
+    &::after {
+      content: "Бесплатная доставка по России";
+      position: absolute;
+      top: 24px;
+      right: 50px;
+      font-size: 15px;
+      line-height: 1.6;
+      text-align: right;
+      color: #444444;
+    }
+  }
+  .catalog-main__list {
+    display: flex;
+    max-width: 1049px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .product__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .product {
+    margin: auto;
+    margin-right: 50px;
+  }
+  .product--last {
+    margin-right: 0;
+  }
+  .product__description-wrap {
+    width: auto;
+  }
+  .product__description-additional {
+    margin-bottom: 45px;
+  }
+  .product__description-additional--basket {
+    margin-bottom: 22px;
+  }
+  .site-list__item--new,
+  .site-list__item--sale {
+    z-index: 100;
+  }
 }
