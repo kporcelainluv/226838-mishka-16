@@ -7,16 +7,14 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-    <header class="page-header">
+    <!-- <header class="page-header">
       <div class="page-header__wrap">
       <a href="" class="page-header__wrap-logo">
-        <img
-          class="page-header__wrap-logo-image"
-          src="./img/logo-mobile.svg"
-          alt="Логотип магазина Мишка"
-          width="86"
-          height="35"
-        />
+        <picture class="page-header__image">
+          <source srcset="./img/logo-desktop.svg" media="(min-width: 1150px)" />
+          <source srcset="./img/logo-tablet.svg" media="(min-width: 772px)" />
+          <img src="./img/logo-mobile.svg" alt="логотип магазина" />
+        </picture>
       </a>
       </div>
       <button class="page-header__button" type="button">
@@ -34,7 +32,7 @@
           <li class="site-list__item site-list__item--cart"><a class="site-list__item-link"  href="#">Корзина: пока пуста</a></li>
         </ul>
       </nav>
-    </header>
+    </header> -->
     <main class="page-main">
       <section class="main-catalog">
         <h1 class="main-catalog__description">
@@ -71,13 +69,12 @@
           </tr>
         </table>
 
-        <img
-          class="main-product__image"
-          src="./img/triple-set-mobile@1x.jpg"
-          alt="Вязаные корзинки"
-          width="260"
-          height="315"
-        />
+        <picture class="main-product__image">
+          <source srcset="./img/triple-set-desktop@1x.jpg" media="(min-width: 1150px)" />
+          <source srcset="./img/triple-set-tablet@1x.jpg" media="(min-width: 772px)" />
+          <img src="./img/triple-set-mobile@1x.jpg" alt="логотип магазина" />
+
+        </picture>
         <span class="main-product__price">Цена: 990 руб.</span>
         <a class="order-button" href="#">Заказать</a>
         <div class="main-product__zigzag"></div>
