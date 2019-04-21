@@ -38,7 +38,6 @@
 
 .link-wrap__item--instagram {
   padding-right: 50px;
-
   &::before {
     @include socials-icon();
     background-image: url("../img/icon-insta.svg");
@@ -92,6 +91,9 @@
     left: 0;
   }
 }
+.main-footer__image {
+  display: none;
+}
 @media (min-width: $tablet-width) {
   .main-footer {
     display: flex;
@@ -106,6 +108,7 @@
     }
   }
   .main-footer__image {
+    display: block;
     padding-top: 50px;
   }
   .main-footer__socials,
