@@ -30,7 +30,7 @@
 }
 .main-reviews__buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .main-reviews__button {
   min-height: 52px;
@@ -113,6 +113,7 @@
     height: 26px;
     border: none;
     margin-top: 50px;
+    justify-content: space-between;
   }
 }
 @media (min-width: $desktop-width) {

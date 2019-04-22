@@ -128,25 +128,30 @@
         <button class="button button-reviews">НАПИСАТЬ</button>
       </section>
       <section class="main-contacts">
+        <div class="main-contacts__wrap">
         <h2 class="main-contacts__heading">Контакты</h2>
         <table class="main-contacts__info">
+          <tbody class="main-contacts__info-wrap">
           <tr class="main-contacts__email">
             <td class="main-contacts__element">e-mail:</td>
             <td class="main-contacts__element">info@mimimishkashop</td>
           </tr>
           <tr class="main-contacts__address">
-            <td class="main-contacts__element main-contacts__element--address">адрес:</td>
-            <td class="main-contacts__element">г. Санкт-Петербург,
-            ул. Большая Конюшенная,
-            д. 19/8, офис 101</td>
-          </tr>
+              <td class="main-contacts__element main-contacts__element--address">адрес:</td>
+              <td class="main-contacts__element">г. Санкт-Петербург,<br>
+                ул. Большая Конюшенная,
+                д. 19/8, офис 101</td>
+              </tr>
+              </tbody>
         </table>
+        <button class="button button--contacts">НАПИШИТЕ НАМ</button>
+        </div>
         <picture class="main-contacts__image">
           <source srcset="./img/map-desktop@1x.jpg" media="(min-width: 1150px)" />
           <source srcset="./img/map-tablet@1x.jpg" media="(min-width: 772px)" />
           <img class="main-contacts__image--mobile" src="./img/map-mobile@1x.jpg" alt="карта проезда">
         </picture>
-        <button class="button button--contacts">НАПИШИТЕ НАМ</button>
+
       </section>
     </main>
     <footer class="main-footer">
