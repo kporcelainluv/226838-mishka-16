@@ -25,3 +25,16 @@
     margin-left: 50px;
   }
 }
+@media (min-width: $desktop-width) {
+  .main-about {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .main-about__header {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-about__features {
+    margin-left: 0;
+  }
+}
