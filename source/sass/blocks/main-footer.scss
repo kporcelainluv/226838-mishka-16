@@ -105,8 +105,13 @@
     display: block;
     padding-top: 50px;
   }
-  .main-footer__socials,
-  .footer-creator {
+  .main-footer__socials {
     padding-top: 65px;
+  }
+  .footer-creator {
+    padding-top: 35px;
+  }
+  .footer-creator__info {
+    border: none;
   }
 }
