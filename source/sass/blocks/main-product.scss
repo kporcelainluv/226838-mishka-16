@@ -26,10 +26,12 @@
   line-height: 1.6;
   max-width: 245px;
   color: $content-color;
+  margin-left: 30px;
 }
 
 .main-product__advantages {
   border-collapse: collapse;
+  margin-left: 30px;
 }
 
 .product-advantages__name {
@@ -48,12 +50,15 @@
 }
 
 .main-product__image {
-  margin-top: 50px;
   position: absolute;
   text-align: center;
-  // left: 10%;
-  // right: 10%;
-  top: 210px;
+  top: 35%;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 260px;
+}
+.main-product__image--mobile {
+  max-width: 100%;
 }
 
 .main-product__price {
@@ -64,19 +69,7 @@
   color: $content-color;
   display: flex;
   justify-content: center;
-  margin-top: 345px;
-}
-
-.order-button {
-  display: block;
-  border: solid 2px $content-color;
-  color: $content-color;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: bold;
-  text-align: center;
-  padding: 20px 90px;
-  margin-top: 30px;
+  margin-top: 385px;
 }
 
 .main-product__zigzag {
@@ -154,7 +147,6 @@
     margin-right: auto;
   }
   .main-product__image {
-    margin-top: 50px;
     position: relative;
     top: 0;
   }
