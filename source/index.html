@@ -75,7 +75,7 @@
         </table>
 
         <span class="main-product__price">Цена: 990 руб.</span>
-        <a class="button" href="#">Заказать</a>
+        <a class="button button--order" href="#">Заказать</a>
           </div>
         <picture class="main-product__image">
           <source srcset="./img/triple-set-desktop@1x.jpg" media="(min-width: 1150px)" />
@@ -84,7 +84,7 @@
 
         </picture>
         </div>
-        <div class="main-product__zigzag"></div>
+        <div class="main-zigzag"></div>
       </article>
       <section class="main-about">
         <h2 class="main-about__header">Коротко о нас:</h2>
@@ -108,12 +108,14 @@
             Поставляется в подарочной упаковке
           </li>
         </ul>
+        <div class="main-zigzag main-zigzag--reviews"></div>
       </section>
       <section class="main-reviews">
         <h2 class="main-reviews__heading">Отзывы</h2>
         <p class="main-reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В
         отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
         больше лайков!</p>
+        <div class="main-revies__bottom-wrap">
         <div class="main-reviews__review-author">
           <p class="author__name">Анастасия Красильникова</p>
           <p class="author__nickname">@misssssiskras</p>
@@ -122,17 +124,18 @@
           <button class="main-reviews__button main-reviews__button--left"><span class="visually-hidden">left</span></button>
           <button class="main-reviews__button main-reviews__button--right"><span class="visually-hidden">right</span></button>
         </div>
-        <button class="button">НАПИСАТЬ</button>
+        </div>
+        <button class="button button-reviews">НАПИСАТЬ</button>
       </section>
       <section class="main-contacts">
         <h2 class="main-contacts__heading">Контакты</h2>
         <table class="main-contacts__info">
-          <tr>
+          <tr class="main-contacts__email">
             <td class="main-contacts__element">e-mail:</td>
             <td class="main-contacts__element">info@mimimishkashop</td>
           </tr>
-          <tr>
-            <td class="main-contacts__element">адрес:</td>
+          <tr class="main-contacts__address">
+            <td class="main-contacts__element main-contacts__element--address">адрес:</td>
             <td class="main-contacts__element">г. Санкт-Петербург,
             ул. Большая Конюшенная,
             д. 19/8, офис 101</td>
@@ -143,7 +146,7 @@
           <source srcset="./img/map-tablet@1x.jpg" media="(min-width: 772px)" />
           <img class="main-contacts__image--mobile" src="./img/map-mobile@1x.jpg" alt="карта проезда">
         </picture>
-        <button class="button">НАПИШИТЕ НАМ</button>
+        <button class="button button--contacts">НАПИШИТЕ НАМ</button>
       </section>
     </main>
     <footer class="main-footer">
