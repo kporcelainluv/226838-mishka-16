@@ -9,15 +9,18 @@
   padding-top: 76px;
   padding-bottom: 74px;
 }
+
 .catalog-main__list {
   padding-left: 30px;
   padding-right: 30px;
 }
+
 .product {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
+
 .product__description {
   font-size: 17px;
   font-weight: bold;
@@ -42,7 +45,7 @@
   justify-content: space-between;
   padding-top: 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 0px 30px;
+  margin: 0 30px;
 }
 
 .product__price {
@@ -63,7 +66,7 @@
     height: 19px;
     position: absolute;
     top: 15px;
-    right: 0px;
+    right: 0;
     opacity: 0.2;
   }
 }
@@ -72,17 +75,20 @@
   border: 1px solid #ececec;
   margin-top: -5px;
 }
+
 @media (min-width: $tablet-width) {
   .product__wrap {
     display: flex;
     margin-bottom: 54px;
   }
+
   .product__description-wrap {
     width: 335px;
-    margin: 0px;
+    margin: 0;
     display: flex;
     flex-direction: column;
   }
+
   .product__description {
     max-width: 232px;
     padding-top: 29px;
@@ -90,25 +96,31 @@
     display: flex;
     flex-direction: column;
   }
+
   .product__description-additional {
     margin-top: 15px;
   }
+
   .product__order {
-    padding: 0px;
+    padding: 0;
     margin-top: auto;
   }
+
   .product__description--basket {
     max-width: 200px;
   }
+
   .catalog-main__products {
     margin-bottom: 50px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .catalog-main__header {
     padding: 105px 0;
     margin-top: -15px;
     position: relative;
+
     &::after {
       content: "Бесплатная доставка по России";
       position: absolute;
@@ -120,32 +132,40 @@
       color: #444444;
     }
   }
+
   .catalog-main__list {
     display: flex;
     max-width: 1049px;
     margin-right: 50px;
     margin-left: 50px;
   }
+
   .product__wrap {
     display: flex;
     flex-direction: column;
   }
+
   .product {
     margin: auto;
     margin-right: 50px;
   }
+
   .product--last {
     margin-right: 0;
   }
+
   .product__description-wrap {
     width: auto;
   }
+
   .product__description-additional {
     margin-bottom: 45px;
   }
+
   .product__description-additional--basket {
     margin-bottom: 22px;
   }
+
   .site-list__item--new,
   .site-list__item--sale {
     z-index: 100;

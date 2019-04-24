@@ -6,6 +6,7 @@
   margin: 30px auto;
   margin-left: 91px;
   position: relative;
+
   &::before {
     content: "";
     width: 32px;
@@ -17,6 +18,7 @@
     filter: $svg-green-color;
   }
 }
+
 .catalog__production {
   border: 1px solid $grey;
   display: flex;
@@ -25,6 +27,7 @@
   max-width: 260px;
   position: relative;
 }
+
 .production__description {
   max-width: 183px;
   font-size: 13px;
@@ -34,6 +37,7 @@
   padding-top: 34px;
   margin-top: 155px;
 }
+
 .button {
   display: block;
   font-size: 17px;
@@ -48,34 +52,41 @@
   text-decoration: none;
   text-align: center;
 }
+
 .production__image {
   position: absolute;
   top: 96px;
 }
+
 @media (min-width: $tablet-width) {
   .catalog__production {
     display: flex;
     max-width: 668px;
     margin: auto;
   }
+
   .production__image {
     position: relative;
     top: 0;
   }
+
   .production__heading {
     display: flex;
     max-width: 241px;
     margin: 41px 0;
     margin-left: 107px;
+
     &::before {
       top: -5px;
     }
   }
+
   .production__description {
     max-width: 581px;
     padding: 0;
     margin-top: 0;
   }
+
   .button {
     width: 581px;
   }
@@ -88,28 +99,34 @@
     max-width: 1049px;
     margin-bottom: 105px;
   }
+
   .production__wrap {
     display: flex;
     flex-direction: column;
     margin-left: 80px;
   }
+
   .production__heading {
     display: flex;
     max-width: 241px;
     margin: 100px 0 0 0;
+
     &::before {
       top: -60px;
-      left: 0px;
+      left: 0;
     }
   }
+
   .production__description {
     max-width: 222px;
     margin: 42px 0 0 0;
   }
+
   .button {
     margin: 50px 0 0 0;
     max-width: 230px;
   }
+
   .production__image {
     left: -35px;
   }

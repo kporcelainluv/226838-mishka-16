@@ -73,6 +73,7 @@
     height: 60px;
   }
 }
+
 @media (min-width: $tablet-width) {
   .main-catalog {
     background-image: url("../img/hero-tablet@1x.jpg");
@@ -80,6 +81,7 @@
     background-position: top;
     height: 746px;
   }
+
   .main-catalog__description {
     font-size: 43px;
     font-weight: bold;
@@ -88,10 +90,12 @@
     max-width: 530px;
     padding-top: 160px;
   }
+
   .main-catalog__categories-list {
     display: flex;
     margin-top: 370px;
   }
+
   .categories-list__element {
     max-width: 334px;
   }

@@ -29,6 +29,7 @@
 
 .link-wrap__item--instagram {
   padding-right: 50px;
+
   &::before {
     @include socials-icon();
     background-image: url("../img/icon-insta.svg");
@@ -85,32 +86,40 @@
     left: 0;
   }
 }
+
 .main-footer__image {
   display: none;
 }
+
 @media (min-width: $tablet-width) {
   .main-footer {
     display: flex;
     justify-content: space-around;
     min-height: 143px;
   }
+
   .links-list {
     padding-top: 0;
     margin: 0;
+
     &::after {
       border: none;
     }
   }
+
   .main-footer__image {
     display: block;
     padding-top: 50px;
   }
+
   .main-footer__socials {
     padding-top: 65px;
   }
+
   .footer-creator {
     padding-top: 35px;
   }
+
   .footer-creator__info {
     border: none;
   }
