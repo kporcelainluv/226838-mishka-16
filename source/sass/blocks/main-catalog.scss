@@ -77,9 +77,17 @@
 @media (min-width: $tablet-width) {
   .main-catalog {
     background-image: url("../img/hero-tablet@1x.jpg");
-    margin-top: -15px;
     background-position: top;
     height: 746px;
+    margin-top: -110px;
+    &::after {
+      content: "Бесплатная доставка по России";
+      position: absolute;
+      top: 135px;
+      right: 8%;
+      font-size: 15px;
+      color: $content-color;
+    }
   }
 
   .main-catalog__description {
@@ -89,6 +97,7 @@
     text-align: center;
     max-width: 530px;
     padding-top: 160px;
+    position: relative;
   }
 
   .main-catalog__categories-list {
