@@ -113,8 +113,8 @@
 @media (min-width: $desktop-width) {
   .catalog-main__header {
     padding: 105px 0;
-    margin-top: -15px;
     position: relative;
+    margin-top: -110px;
 
     &::after {
       content: "Бесплатная доставка по России";
@@ -130,9 +130,8 @@
 
   .catalog-main__list {
     display: flex;
-    max-width: 1049px;
-    margin-right: 50px;
-    margin-left: 50px;
+    // max-width: 1049px;
+    padding: 0;
   }
 
   .product__wrap {
@@ -142,11 +141,6 @@
 
   .product {
     margin: auto;
-    margin-right: 50px;
-  }
-
-  .product--last {
-    margin-right: 0;
   }
 
   .product__description-wrap {

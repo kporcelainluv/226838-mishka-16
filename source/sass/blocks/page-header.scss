@@ -83,7 +83,6 @@
     @include header-menu-icon();
   }
 }
-
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
@@ -156,5 +155,34 @@
       top: 38px;
       left: 13%;
     }
+  }
+}
+@media (min-width: $desktop-width) {
+  .site-list__item--catalog {
+    order: 0;
+  }
+
+  .site-list__item--order {
+    order: 1;
+  }
+
+  .site-list__item--search {
+    order: 2;
+    margin-left: 28%;
+  }
+  .site-list__item--cart {
+    order: 3;
+  }
+  .site-list__item--new {
+    display: block;
+    order: 4;
+  }
+  .site-list__item--sale {
+    display: block;
+    order: 4;
+  }
+  .page-header__wrap-logo {
+    position: absolute;
+    left: 43%;
   }
 }

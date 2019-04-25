@@ -109,8 +109,9 @@
 
   .main-product__additional-header {
     max-width: 70px;
-    margin-left: 23%;
     margin-top: 5px;
+    position: absolute;
+    right: 15%;
   }
 
   .main-product__description-wrap {
