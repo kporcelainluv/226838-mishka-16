@@ -1,0 +1,133 @@
+.production__heading {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  max-width: 126px;
+  margin: 30px auto;
+  margin-left: 91px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 32px;
+    height: 30px;
+    background-image: url("../img/icon-video.svg");
+    position: absolute;
+    top: 5px;
+    left: -60px;
+    filter: $svg-green-color;
+  }
+}
+
+.catalog__production {
+  border: 1px solid $grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 260px;
+  position: relative;
+}
+
+.production__description {
+  max-width: 183px;
+  font-size: 13px;
+  line-height: 1.85;
+  color: $content-color;
+  margin: auto;
+  padding-top: 34px;
+  margin-top: 155px;
+}
+
+.button {
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 0.94;
+  color: $content-color;
+  border: 2px solid $content-color;
+  padding: 20px 26px 20px 26px;
+  margin-top: 30px;
+  background-color: $white;
+  max-width: 260px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.production__image {
+  position: absolute;
+  top: 96px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__production {
+    display: flex;
+    max-width: 668px;
+    margin: auto;
+  }
+
+  .production__image {
+    position: relative;
+    top: 0;
+  }
+
+  .production__heading {
+    display: flex;
+    max-width: 241px;
+    margin: 41px 0;
+    margin-left: 107px;
+
+    &::before {
+      top: -5px;
+    }
+  }
+
+  .production__description {
+    max-width: 581px;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .button {
+    width: 581px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__production {
+    display: flex;
+    flex-direction: row;
+    max-width: 1049px;
+    margin-bottom: 105px;
+  }
+
+  .production__wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+  }
+
+  .production__heading {
+    display: flex;
+    max-width: 241px;
+    margin: 100px 0 0 0;
+
+    &::before {
+      top: -60px;
+      left: 0;
+    }
+  }
+
+  .production__description {
+    max-width: 222px;
+    margin: 42px 0 0 0;
+  }
+
+  .button {
+    margin: 50px 0 0 0;
+    max-width: 230px;
+  }
+
+  .production__image {
+    left: -35px;
+  }
+}

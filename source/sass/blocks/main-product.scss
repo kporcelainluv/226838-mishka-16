@@ -1,13 +1,9 @@
-@mixin block-margin {
-  margin-left: 32px;
-  margin-right: 32px;
-}
-
 .main-product {
   margin-top: 34px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 .main-product__header {
@@ -16,8 +12,6 @@
   line-height: 1.2;
   margin: 0;
   padding: 0;
-
-  @include block-margin();
 }
 
 .main-product__additional-header {
@@ -25,8 +19,6 @@
   font-weight: bold;
   line-height: 1.18;
   color: $seafoam-blue;
-
-  @include block-margin();
 }
 
 .main-product__description {
@@ -34,14 +26,12 @@
   line-height: 1.6;
   max-width: 245px;
   color: $content-color;
-
-  @include block-margin();
+  margin-left: 30px;
 }
 
 .main-product__advantages {
   border-collapse: collapse;
-
-  @include block-margin();
+  margin-left: 30px;
 }
 
 .product-advantages__name {
@@ -60,9 +50,15 @@
 }
 
 .main-product__image {
-  margin-top: 30px;
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
-  @include block-margin();
+.main-product__image--mobile {
+  max-width: initial;
 }
 
 .main-product__price {
@@ -73,56 +69,141 @@
   color: $content-color;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 385px;
 }
 
-.order-button {
-  display: block;
-  border: solid 2px $content-color;
-  color: $content-color;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: bold;
-  text-align: center;
-  padding: 20px 90px;
-  margin-top: 30px;
-
-  @include block-margin();
+.main-product__header-wrap {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-direction: column;
 }
 
-.main-product__zigzag {
-  margin-top: 36px;
-  background: $white;
-  position: relative;
-  height: 16px;
-  z-index: 1;
+.main-product__advantages-wrap {
+  display: flex;
+  flex-direction: row;
+}
 
-  &::before,
-  &::after {
-    content: "";
-    display: block;
+.button--order {
+  margin-left: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-product {
+    margin-top: 47px;
+    position: relative;
+  }
+
+  .main-product__header {
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+    min-width: 420px;
+  }
+
+  .main-product__header-wrap {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+
+  .main-product__additional-header {
+    max-width: 70px;
+    margin-top: 5px;
     position: absolute;
-    left: 0;
-    right: 0;
+    right: 15%;
   }
 
-  &::before {
-    height: 8px;
-    top: 140%;
-    background: linear-gradient(-135deg, $grey 8px, transparent 0) 0 8px,
-      linear-gradient(135deg, $grey 8px, transparent 0) 0 8px;
-    background-position: top left;
-    background-repeat: repeat-x;
-    background-size: 16px 16px;
+  .main-product__description-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-right: auto;
   }
 
-  &::after {
-    height: 16px;
-    top: 100%;
-    background: linear-gradient(-135deg, $white 8px, transparent 0) 0 8px,
-      linear-gradient(135deg, $white 8px, transparent 0) 0 8px;
-    background-position: top left;
-    background-repeat: repeat-x;
-    background-size: 16px 16px;
+  .main-product__image {
+    position: relative;
+    top: 20px;
+  }
+
+  .main-product__advantages-wrap {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .main-product__description {
+    max-width: 282px;
+    font-size: 17px;
+    line-height: 1.76;
+    margin: 0;
+  }
+
+  .product-advantages__name {
+    padding: 10px 0;
+    font-size: 15px;
+    line-height: 1.33;
+  }
+
+  .main-product__price {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 35px;
+  }
+
+  .main-product__advantages {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
+  .main-product__image--mobile {
+    max-width: auto;
+  }
+
+  .button--order {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-product {
+    position: relative;
+    margin-top: 70px;
+  }
+
+  .categories-list__element {
+    max-width: 525px;
+  }
+
+  .main-product__header-wrap {
+    display: flex;
+    position: absolute;
+    top: 90px;
+    left: 130px;
+    z-index: 10;
+  }
+
+  .main-product__header {
+    order: 1;
+    min-width: 515px;
+    margin: 0;
+    padding: 0;
+    font-size: 53px;
+  }
+
+  .main-product__additional-header {
+    order: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: -140px;
+    top: 10px;
+  }
+
+  .main-product__description-wrap {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 60px;
   }
 }

@@ -20,6 +20,7 @@
   padding: 0;
   margin-top: 120px;
   position: relative;
+  justify-content: center;
 }
 
 .categories-list__element {
@@ -30,6 +31,8 @@
   line-height: 1.26;
   text-align: left;
   position: relative;
+  list-style-type: none;
+  padding: 8px 0;
 }
 
 .categories-list__element__link {
@@ -68,5 +71,42 @@
     right: 28px;
     width: 60px;
     height: 60px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-catalog {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: top;
+    height: 746px;
+    margin-top: -110px;
+
+    &::after {
+      content: "Бесплатная доставка по России";
+      position: absolute;
+      top: 135px;
+      right: 8%;
+      font-size: 15px;
+      color: $content-color;
+    }
+  }
+
+  .main-catalog__description {
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+    text-align: center;
+    max-width: 530px;
+    padding-top: 160px;
+    position: relative;
+  }
+
+  .main-catalog__categories-list {
+    display: flex;
+    margin-top: 370px;
+  }
+
+  .categories-list__element {
+    max-width: 334px;
   }
 }

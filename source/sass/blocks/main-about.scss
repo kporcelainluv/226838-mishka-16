@@ -15,82 +15,31 @@
   padding: 0;
 }
 
-.features-list__element {
-  list-style-type: none;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 1.18;
-  margin-top: 70px;
-  margin-bottom: 30px;
-  position: relative;
+@media (min-width: $tablet-width) {
+  .main-about__header {
+    font-size: 43px;
+    line-height: 1.16;
+    margin-left: 50px;
+    margin-top: 60px;
+  }
 
-  &::before {
-    margin-left: 10px;
-    content: "";
-    filter: invert(88%) sepia(15%) saturate(1247%) hue-rotate(106deg)
-      brightness(86%) contrast(89%);
-    position: absolute;
-    top: -40px;
-    left: 0;
+  .main-about__features {
+    margin-left: 50px;
   }
 }
 
-.features-list__element--material {
-  max-width: 165px;
-
-  &::before {
-    height: 37px;
-    width: 32px;
-    background-image: url("../img/icon-feature-flower.svg");
+@media (min-width: $desktop-width) {
+  .main-about {
+    margin-left: 20%;
+    margin-right: 20%;
   }
-}
 
-.features-list__element--price {
-  max-width: 195px;
-
-  &::before {
-    height: 28px;
-    width: 47px;
-    background-image: url("../img/icon-feature-money.svg");
+  .main-about__header {
+    margin-left: auto;
+    margin-right: auto;
   }
-}
 
-.features-list__element--like {
-  max-width: 175px;
-
-  &::before {
-    height: 27px;
-    width: 33px;
-    background-image: url("../img/icon-feature-heart.svg");
-  }
-}
-
-.features-list__element--knit {
-  max-width: 198px;
-
-  &::before {
-    height: 34px;
-    width: 33px;
-    background-image: url("../img/icon-feature-ball.svg");
-  }
-}
-
-.features-list__element--support {
-  max-width: 251px;
-
-  &::before {
-    height: 23px;
-    width: 55px;
-    background-image: url("../img/icon-feature-rocket.svg");
-  }
-}
-
-.features-list__element--present {
-  max-width: 195px;
-
-  &::before {
-    height: 33px;
-    width: 32px;
-    background-image: url("../img/icon-feature-gift.svg");
+  .main-about__features {
+    margin-left: 0;
   }
 }
