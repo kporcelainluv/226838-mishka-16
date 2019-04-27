@@ -1,44 +1,40 @@
 .main-catalog {
   background-image: url("../img/hero-mobile@1x.jpg");
-  margin-top: -15px;
+  margin-top: -5%;
   background-position: top;
 }
 
 .main-catalog__description {
-  max-width: 250px;
   font-size: 27px;
   font-weight: bold;
   line-height: 1.11;
   color: $headings-color;
   text-align: center;
   margin: auto;
-  padding-top: 85px;
+  padding-top: 27%;
 }
 
 .main-catalog__categories-list {
   margin: 0;
   padding: 0;
-  margin-top: 120px;
+  margin-top: 127px;
   position: relative;
   justify-content: center;
 }
 
 .categories-list__element {
-  height: 103px;
-  width: 100%;
+  min-height: 103px;
   font-size: 19px;
   font-weight: bold;
   line-height: 1.26;
-  text-align: left;
   position: relative;
   list-style-type: none;
-  padding: 8px 0;
 }
 
 .categories-list__element__link {
   display: flex;
-  padding: 30px;
-  max-width: 106px;
+  padding: 8%;
+  max-width: 50%;
   color: $white;
 }
 
