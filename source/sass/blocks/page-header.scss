@@ -1,5 +1,7 @@
 .page-header {
   background-color: $white;
+  min-height: 80px;
+  position: relative;
 }
 
 .page-header__wrap {
@@ -14,8 +16,8 @@
   background-image: url("../img/icon-menu-open.svg");
   display: block;
   position: absolute;
-  top: 30px;
-  right: 20px;
+  top: 40%;
+  right: 11%;
   height: 14px;
   width: 15px;
   border: 0;
@@ -82,6 +84,13 @@
 
     @include header-menu-icon();
   }
+}
+.page-header__wrap-logo {
+  position: absolute;
+  left: 36%;
+  top: 24%;
+  width: 86px;
+  height: 35px;
 }
 
 @media (min-width: $tablet-width) {
