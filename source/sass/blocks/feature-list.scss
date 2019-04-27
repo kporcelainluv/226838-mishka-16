@@ -1,10 +1,10 @@
 .features-list__element {
+  padding-top: 5%;
   list-style-type: none;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.18;
-  margin-top: 70px;
-  margin-bottom: 30px;
+  margin-top: 24%;
   position: relative;
 
   &::before {
@@ -14,12 +14,12 @@
       brightness(86%) contrast(89%);
     position: absolute;
     top: -40px;
-    left: 0;
+    left: -5px;
   }
 }
 
 .features-list__element--material {
-  max-width: 165px;
+  max-width: 60%;
 
   &::before {
     height: 37px;
@@ -29,7 +29,7 @@
 }
 
 .features-list__element--price {
-  max-width: 195px;
+  max-width: 70%;
 
   &::before {
     height: 28px;
@@ -39,7 +39,7 @@
 }
 
 .features-list__element--like {
-  max-width: 175px;
+  max-width: 65%;
 
   &::before {
     height: 27px;
@@ -49,7 +49,7 @@
 }
 
 .features-list__element--knit {
-  max-width: 198px;
+  max-width: 75%;
 
   &::before {
     height: 34px;
@@ -59,7 +59,8 @@
 }
 
 .features-list__element--support {
-  max-width: 251px;
+  max-width: 90%;
+  padding-top: 4%;
 
   &::before {
     height: 23px;
@@ -69,7 +70,7 @@
 }
 
 .features-list__element--present {
-  max-width: 195px;
+  max-width: 70%;
 
   &::before {
     height: 33px;
