@@ -33,9 +33,11 @@
 
 .categories-list__element__link {
   display: flex;
-  padding: 8%;
   max-width: 50%;
   color: $white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10% 0 0 11%;
 }
 
 @mixin list__element--icon {
@@ -49,7 +51,7 @@
 
   &::before {
     @include list__element--icon();
-    top: 23px;
+    top: 27px;
     right: 36px;
     background-image: url("../img/icon-interior.svg");
     width: 40px;
@@ -63,8 +65,8 @@
   &::after {
     @include list__element--icon();
     background-image: url("../img/icon-toy.svg");
-    top: 21px;
-    right: 28px;
+    top: 32px;
+    right: 30px;
     width: 60px;
     height: 60px;
   }
@@ -72,10 +74,18 @@
 
 @media (min-width: $tablet-width) {
   .main-catalog {
-    background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: top;
-    height: 746px;
-    margin-top: -110px;
+    position: relative;
+    background-image: none;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/hero-tablet@1x.jpg");
+      top: -60px;
+      left: 0;
+      min-width: 768px;
+      height: 746px;
+      background-position: center;
+    }
   }
 
   .main-catalog__description {
@@ -84,16 +94,17 @@
     line-height: 1.16;
     text-align: center;
     max-width: 530px;
-    padding-top: 160px;
+    padding-top: 12%;
+    padding-left: 3%;
     position: relative;
   }
 
   .main-catalog__categories-list {
     display: flex;
-    margin-top: 370px;
+    margin-top: 49%;
   }
 
   .categories-list__element {
-    max-width: 334px;
+    min-width: 334px;
   }
 }
