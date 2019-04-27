@@ -1,9 +1,16 @@
 .main-product {
-  margin-top: 34px;
+  margin-top: 24px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   position: relative;
+}
+.main-product__header-wrap {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .main-product__header {
@@ -12,6 +19,7 @@
   line-height: 1.2;
   margin: 0;
   padding: 0;
+  margin-bottom: 5px;
 }
 
 .main-product__additional-header {
@@ -24,22 +32,24 @@
 .main-product__description {
   font-size: 15px;
   line-height: 1.6;
-  max-width: 245px;
   color: $content-color;
   margin-left: 30px;
+  max-width: 78%;
+  margin-bottom: 8%;
 }
 
 .main-product__advantages {
   border-collapse: collapse;
-  margin-left: 30px;
+  margin-left: 9%;
 }
 
 .product-advantages__name {
   font-size: 15px;
   line-height: 1.33;
   color: $content-color;
-  padding-right: 30px;
+  padding-right: 11%;
   border-bottom: 1px solid $grey;
+  padding-bottom: 2%;
 }
 
 .product-advantages__value {
@@ -47,13 +57,18 @@
   line-height: 1.33;
   color: $content-color;
   border-bottom: 1px solid $grey;
+  padding-bottom: 2%;
+}
+.product-advantages__value--second,
+.product-advantages__value--last {
+  padding-top: 7%;
 }
 
 .main-product__image {
   position: absolute;
   text-align: center;
-  top: 35%;
-  margin-left: 5%;
+  top: 317px;
+  margin-left: 8%;
   margin-right: 5%;
 }
 
@@ -69,14 +84,7 @@
   color: $content-color;
   display: flex;
   justify-content: center;
-  margin-top: 385px;
-}
-
-.main-product__header-wrap {
-  display: flex;
-  margin-left: 10%;
-  margin-right: 10%;
-  flex-direction: column;
+  margin-top: 375px;
 }
 
 .main-product__advantages-wrap {
@@ -85,7 +93,18 @@
 }
 
 .button--order {
-  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 20px 80px;
+  border: 1px solid $content-color;
+  max-width: 260px;
+  padding: 18px 0;
+  font-size: 17px;
+  font-weight: bold;
+  color: $content-color;
+  margin: auto;
+  margin-top: 22px;
 }
 
 @media (min-width: $tablet-width) {
