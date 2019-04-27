@@ -5,13 +5,15 @@
 .main-footer__socials-list {
   display: flex;
   justify-content: center;
-  padding: 30px 0;
+  padding: 10% 0;
   position: relative;
   margin-bottom: 0;
 }
 
 .links-list__element {
   list-style-type: none;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .link-wrap__item {
@@ -28,7 +30,7 @@
 }
 
 .link-wrap__item--instagram {
-  padding-right: 50px;
+  padding-right: 55px;
 
   &::before {
     @include socials-icon();
@@ -59,10 +61,8 @@
 .footer-creator__info {
   display: flex;
   justify-content: center;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding: 8% 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 0 30px;
 }
 
 .project-creator {
@@ -82,8 +82,8 @@
     height: 34px;
     width: 27px;
     position: absolute;
-    top: -15px;
-    left: 0;
+    top: -7px;
+    left: -17px;
   }
 }
 
