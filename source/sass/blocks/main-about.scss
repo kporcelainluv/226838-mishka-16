@@ -27,13 +27,16 @@
 
 @media (min-width: $desktop-width) {
   .main-about {
-    margin-left: 20%;
+    margin-left: 15%;
     margin-right: 20%;
   }
 
   .main-about__header {
     margin-left: auto;
     margin-right: auto;
+    font-size: 53px;
+    margin-top: 12%;
+    margin-left: 7%;
   }
 
   .main-about__features {
