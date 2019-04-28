@@ -191,14 +191,14 @@
 @media (min-width: $desktop-width) {
   .main-product {
     position: relative;
-    margin-top: 70px;
+    margin-top: 30px;
   }
 
   .main-product__header-wrap {
     display: flex;
     position: absolute;
-    top: 90px;
-    left: 130px;
+    top: 85px;
+    left: 142px;
     z-index: 10;
   }
 
@@ -215,13 +215,26 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    left: -140px;
-    top: 10px;
+    left: -115px;
+    top: 15px;
   }
 
   .main-product__description-wrap {
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: 60px;
+    margin-top: 20%;
+    margin-left: 16%;
+  }
+  .main-product__description {
+    margin-bottom: 15%;
+  }
+  .main-product__image {
+    right: 25px;
+  }
+  .main-product__price {
+    margin-top: 38%;
+  }
+  .button--order {
+    min-width: 287px;
+    margin-top: 13%;
+    padding: 15px 0;
   }
 }
