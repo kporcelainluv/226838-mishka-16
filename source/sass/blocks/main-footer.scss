@@ -130,3 +130,24 @@
     border: none;
   }
 }
+@media (min-width: $desktop-width) {
+  .main-footer {
+    justify-content: space-between;
+  }
+  .main-footer__image {
+    padding-left: 5%;
+  }
+  .footer-creator {
+    padding-right: 3%;
+    padding-top: 4%;
+    &::after {
+      top: -3px;
+      left: -41px;
+    }
+  }
+  .link-wrap__item--twitter {
+    &::before {
+      left: 10px;
+    }
+  }
+}
