@@ -108,3 +108,13 @@
     min-width: 334px;
   }
 }
+@media (min-width: $desktop-width) {
+  .main-catalog {
+    &::before {
+      background-image: url("../img/hero-desktop@1x.jpg");
+      min-width: 1150px;
+      height: 746px;
+      top: -35px;
+    }
+  }
+}

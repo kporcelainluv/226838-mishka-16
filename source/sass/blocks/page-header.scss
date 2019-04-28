@@ -187,35 +187,57 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list__item {
+    font-size: 17px;
+    padding-top: 43px;
+  }
   .site-list__item--catalog {
     order: 0;
+    padding-left: 5%;
   }
 
   .site-list__item--order {
     order: 1;
+    padding-left: 6%;
   }
 
   .site-list__item--search {
     order: 2;
-    margin-left: 28%;
+    margin-left: 25%;
   }
 
   .site-list__item--cart {
     order: 3;
+    padding-left: 7%;
+  }
+  .site-list__item--sale {
+    padding-left: 0%;
+    font-size: 15px;
   }
 
   .site-list__item--new {
     display: block;
     order: 4;
+    padding-top: 16px;
+    font-size: 15px;
+    padding-left: 5%;
   }
 
   .site-list__item--sale {
     display: block;
     order: 4;
+    padding-top: 16px;
+    padding-left: 2%;
+  }
+  .site-list__item--delivery {
+    font-size: 15px;
+    position: absolute;
+    top: 75px;
+    right: 11px;
   }
 
   .page-header__wrap-logo {
     position: absolute;
-    left: 43%;
+    left: 44%;
   }
 }
