@@ -61,42 +61,64 @@
 
 @media (min-width: $tablet-width) {
   .main-contacts {
-    margin-top: 100px;
+    margin-top: 156px;
     display: flex;
+    margin-bottom: 8%;
   }
 
   .main-contacts__heading {
     font-size: 43px;
     font-weight: bold;
     line-height: 1.16;
+    margin-left: 6%;
+    margin-top: 0;
+    margin-bottom: 6%;
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url("../img/icon-flag.svg");
+      width: 47px;
+      height: 81px;
+      position: absolute;
+      top: -13px;
+      right: 63px;
+    }
   }
 
   .main-contacts__info {
     display: flex;
+    margin: 0 8% 8% 7%;
   }
 
   .main-contacts__info-wrap {
     display: flex;
     flex-direction: row;
+    width: 100%;
+  }
+  .main-contacts__element {
+    font-size: 17px;
+    max-width: 230px;
   }
 
   .main-contacts__address {
-    margin-left: 150px;
-    margin-top: 15px;
+    margin-left: 9%;
   }
 
-  .main-contacts__element {
-    max-width: 209px;
+  .main-contacts__element--address,
+  .main-contacts__element--real-adsress {
+    padding: 0;
   }
-
+  .main-contacts__element--address {
+    padding-right: 10%;
+  }
   .main-contacts__image {
-    top: 235px;
-    left: 2%;
-    right: 2%;
+    top: 250px;
   }
 
   .button--contacts {
-    margin-bottom: 57px;
+    margin-top: 560px;
+    padding: 14px 39px;
+    max-width: 230px;
   }
 }
 
