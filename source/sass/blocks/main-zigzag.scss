@@ -34,3 +34,8 @@
     background-size: 16px 16px;
   }
 }
+@media (min-width: $tablet-width) {
+  .main-zigzag {
+    margin-top: 4%;
+  }
+}
