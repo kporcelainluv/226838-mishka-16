@@ -37,6 +37,8 @@
     background-image: url("../img/icon-insta.svg");
     height: 21px;
     width: 22px;
+    top: -4px;
+    left: 10px;
   }
 }
 
@@ -46,6 +48,8 @@
     background-image: url("../img/icon-fb.svg");
     height: 27px;
     width: 15px;
+    top: -8px;
+    left: 4px;
   }
 }
 
@@ -55,6 +59,8 @@
     background-image: url("../img/icon-twitter.svg");
     height: 20px;
     width: 23px;
+    top: -2px;
+    left: 6px;
   }
 }
 
@@ -69,7 +75,7 @@
   font-size: 19px;
   font-weight: bold;
   line-height: 0.95;
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 .project-link {
@@ -83,7 +89,7 @@
     width: 27px;
     position: absolute;
     top: -7px;
-    left: -50px;
+    left: -22px;
   }
 }
 
@@ -129,13 +135,23 @@
   .footer-creator__info {
     border: none;
   }
+  .project-link {
+    &::after {
+      left: -46px;
+    }
+  }
+  .link-wrap__item--instagram::before {
+    &::before {
+      top: -4px;
+    }
+  }
 }
 @media (min-width: $desktop-width) {
   .main-footer {
     justify-content: space-between;
   }
   .main-footer__image {
-    padding-left: 5%;
+    padding-left: 9%;
   }
   .footer-creator {
     padding-right: 3%;
@@ -149,5 +165,11 @@
     &::before {
       left: 10px;
     }
+  }
+  .links-list {
+    padding-left: 140px;
+  }
+  .footer-creator__info {
+    padding: 5% 58px;
   }
 }

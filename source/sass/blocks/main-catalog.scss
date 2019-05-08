@@ -37,7 +37,7 @@
   color: $white;
   font-size: 20px;
   font-weight: bold;
-  padding: 10% 0 0 11%;
+  padding: 9% 0 0 10%;
 }
 
 @mixin list__element--icon {
@@ -100,7 +100,7 @@
 
   .main-catalog__categories-list {
     display: flex;
-    margin-top: 49%;
+    margin-top: 48%;
   }
 
   .categories-list__element {
@@ -118,12 +118,12 @@
     .main-catalog__description {
       font-size: 53px;
       max-width: 700px;
-      padding-top: 10%;
+      padding-top: 9%;
       padding-left: 4%;
       line-height: 1.08;
     }
     .main-catalog__categories-list {
-      margin-top: 32%;
+      margin-top: 28%;
     }
     .categories-list__element {
       min-width: 525px;

@@ -7,7 +7,7 @@
 
 .main-contacts__heading {
   margin-left: 8%;
-  margin-top: 15%;
+  margin-top: 24%;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
@@ -54,7 +54,7 @@
   display: block;
   max-width: 100%;
   position: absolute;
-  top: 320px;
+  top: 345px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -63,7 +63,7 @@
 }
 @media (min-width: $tablet-width) {
   .main-contacts {
-    margin-top: 156px;
+    margin-top: 180px;
     display: flex;
     margin-bottom: 8%;
   }
@@ -116,6 +116,9 @@
   .main-contacts__image {
     top: 250px;
   }
+  .main-contacts__image--mobile {
+    max-width: 100%;
+  }
 
   .button--contacts {
     margin-top: 560px;
@@ -126,10 +129,11 @@
 
 @media (min-width: $desktop-width) {
   .main-contacts {
-    margin-top: 17%;
+    margin-top: 15%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 7%;
   }
 
   .main-contacts__heading {
@@ -140,7 +144,7 @@
     margin-bottom: 14%;
     &::after {
       top: -7px;
-      left: -98px;
+      left: -103px;
     }
   }
 
@@ -167,7 +171,7 @@
     display: block;
     position: relative;
     top: -7px;
-    right: 15px;
+    right: 50px;
   }
 
   .main-contacts__image--mobile {
@@ -186,7 +190,7 @@
 
   .main-contacts__wrap {
     margin-top: 102px;
-    margin-left: 19%;
+    margin-left: 22%;
   }
   .main-contacts__element--real-adsress {
     min-width: 225px;
