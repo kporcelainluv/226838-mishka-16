@@ -82,7 +82,6 @@
 @media (min-width: $tablet-width) {
   .features-list {
     margin-top: -1%;
-    margin: 0;
     display: flex;
     flex-direction: column;
     height: 500px;
@@ -90,11 +89,17 @@
     margin-left: 7%;
     margin-right: 10%;
   }
+
   .features-list__element {
     margin-top: 12%;
     font-size: 20px;
     margin-right: 16%;
+
+    &::before {
+      top: -17px;
+    }
   }
+
   .features-list__element--material {
     max-width: 205px;
   }
@@ -118,11 +123,6 @@
   .features-list__element--present {
     max-width: 233px;
   }
-  .features-list__element {
-    &::before {
-      top: -17px;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -132,9 +132,11 @@
     margin-top: 13%;
     margin-right: 19%;
   }
+
   .features-list__element::before {
     top: -30px;
   }
+
   .features-list {
     margin-left: 12%;
     margin-right: 13%;

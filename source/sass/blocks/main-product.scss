@@ -5,6 +5,7 @@
   flex-direction: column;
   position: relative;
 }
+
 .main-product__header-wrap {
   display: flex;
   margin-left: 10%;
@@ -59,6 +60,7 @@
   border-bottom: 1px solid $grey;
   padding-bottom: 2%;
 }
+
 .product-advantages__value--second,
 .product-advantages__value--last {
   padding-top: 7%;
@@ -96,7 +98,6 @@
   display: flex;
   justify-content: center;
   text-decoration: none;
-  padding: 20px 80px;
   border: 1px solid $content-color;
   max-width: 260px;
   padding: 18px 0;
@@ -119,11 +120,13 @@
     line-height: 1.16;
     min-width: 420px;
   }
+
   .main-product__advantages-wrap {
     display: flex;
     margin-left: 7%;
     margin-right: 10%;
   }
+
   .main-product__header-wrap {
     display: flex;
     margin-left: 7%;
@@ -163,9 +166,11 @@
     line-height: 1.33;
     padding-right: 0;
   }
+
   .product-advantages__value--last {
     padding-top: 6%;
   }
+
   .main-product__price {
     font-size: 20px;
     font-weight: bold;
@@ -223,12 +228,15 @@
     margin-top: 19%;
     margin-left: 19%;
   }
+
   .main-product__description {
     margin-bottom: 15%;
   }
+
   .main-product__price {
     margin-top: 38%;
   }
+
   .button--order {
     min-width: 287px;
     margin-top: 13%;

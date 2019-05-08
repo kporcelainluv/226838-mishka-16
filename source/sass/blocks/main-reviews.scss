@@ -20,10 +20,12 @@
   margin-left: 10%;
   margin-right: 10%;
 }
+
 .main-revies__bottom-wrap {
   margin-left: 10%;
   margin-right: 10%;
 }
+
 .main-reviews__review-author {
   margin-top: 10%;
 }
@@ -114,10 +116,12 @@
       z-index: -10;
     }
   }
+
   .author__name,
   .author__nickname {
     font-size: 18px;
   }
+
   .main-reviews__heading {
     font-size: 43px;
     font-weight: bold;
@@ -138,6 +142,7 @@
     justify-content: space-between;
     margin-left: 50px;
   }
+
   .main-reviews__buttons {
     margin-top: 3%;
   }
@@ -156,9 +161,11 @@
     justify-content: space-between;
     padding: 0;
   }
+
   .main-reviews__button--left::before {
     left: -128px;
   }
+
   .main-reviews__button--right::before {
     right: -10px;
   }
@@ -177,7 +184,6 @@
     max-width: 778px;
     font-size: 17px;
     line-height: 1.76;
-    margin-left: 224px;
     margin-top: 0;
     margin-bottom: 4%;
     margin-left: 23%;
@@ -197,42 +203,46 @@
     padding: 0;
     margin: 0;
     border: none;
-    margin-top: 50px;
+    margin-top: 0;
   }
 
   .main-reviews__button--right {
     width: 50px;
     height: 26px;
+
     &::before {
       right: -45px;
       top: -10px;
     }
   }
+
   .main-reviews__button--left {
     width: 50px;
     height: 26px;
+
     &::before {
       left: 10px;
       top: -10px;
     }
   }
+
   .main-reviews::after {
     top: -31px;
     left: 116px;
   }
+
   .main-reviews__review-author {
     margin-top: 0;
   }
+
   .author__name {
     margin-bottom: 3%;
   }
+
   .button-reviews {
     position: absolute;
     right: -18px;
     top: -93px;
     width: 175px;
-  }
-  .main-reviews__button {
-    margin-top: 0;
   }
 }

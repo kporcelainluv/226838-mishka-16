@@ -71,10 +71,12 @@
     height: 60px;
   }
 }
+
 @media (min-width: $tablet-width) {
   .main-catalog {
     position: relative;
     background-image: none;
+
     &::before {
       content: "";
       position: absolute;
@@ -107,6 +109,7 @@
     min-width: 334px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .main-catalog {
     &::before {
@@ -115,6 +118,7 @@
       height: 746px;
       top: -35px;
     }
+
     .main-catalog__description {
       font-size: 53px;
       max-width: 700px;
@@ -122,13 +126,16 @@
       padding-left: 4%;
       line-height: 1.08;
     }
+
     .main-catalog__categories-list {
       margin-top: 28%;
     }
+
     .categories-list__element {
       min-width: 525px;
       height: 119px;
     }
+
     .categories-list__element__link {
       max-width: 35%;
       padding: 5% 0 0 7%;
